@@ -1,4 +1,4 @@
-package com.algorithms.graph.main;
+package com.algorithms.graph;
 
 import com.algorithms.graph.structures.Array;
 
@@ -14,4 +14,10 @@ public interface Graph<V> {
     int getVertexCount();
     int getEdgeCount();
     boolean isDirected();
+    Array<V> getVertices();
+    String dfsString(V start);
+    String bfsString(V start);
+    Integer getEdgeWeight(V from, V to);
+    String dijkstra(V start);
+    String bellmanFord(V start);
 }
